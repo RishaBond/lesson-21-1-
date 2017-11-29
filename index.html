@@ -15,7 +15,7 @@
 
 <body>
 
-	<section class="section-header">
+    <section class="section-header">
         <div class="container">
             <div class="row">
                 <div class="header">
@@ -48,12 +48,12 @@
                     <div class="right-col">
                         <img class="hand_phone" src="img/mobile.png" alt="mobile">
                     </div>
-                    <div data-relative-input="true" id="scene">
-                        <div data-depth="0.2" class="layer cloud-1"><img src="img/1cloud.png" alt=""></div>
-                        <div data-depth="0.4" class="layer cloud-2"><img src="img/2cloud.png" alt=""></div>
-                        <div data-depth="0.6" class="layer cloud-3"><img src="img/3cloud.png" alt=""></div>
-                        <div data-depth="0.8" class="layer cloud-4"><img src="img/4cloud.png" alt=""></div>
-                    </div>
+                    <ul data-relative-input="true" data-limit-y="integer" data-limit-x="false" id="scene">
+                        <li data-depth="0.2" class="layer-1"><img src="img/1cloud.png" alt=""></li>
+                        <li data-depth="0.4" class="layer-2"><img src="img/2cloud.png" alt=""></li>
+                        <li data-depth="0.6" class="layer-3"><img src="img/3cloud.png" alt=""></li>
+                        <li data-depth="0.8" class="layer-4"><img src="img/4cloud.png" alt=""></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -74,9 +74,9 @@
 	
 	<link rel="stylesheet" href="css/main.min.css">
 	<script src="js/scripts.min.js"></script>
-    <script src="js/parallax.min.js"></script>
+	<script src="js/parallax.min.js"></script>
     <script>
-        var scene = $('#scene').get(0);
+        var scene = document.getElementById('scene');
         var parallaxInstance = new Parallax(scene);
     </script>
 
