@@ -1,84 +1,212 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
-
 	<meta charset="utf-8">
-
-	<title>Title</title>
+	<title>TankAPP</title>
 	<meta name="description" content="">
-
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Nunito|Ubuntu:300,400,500,700" rel="stylesheet">
 </head>
-
 <body>
-
-    <section class="section-header">
+    <header class="section-header">
         <div class="container">
-            <div class="row">
-                <div class="header">
-                    <img class="header__logo" height="32" src="img/logo.png" alt="logo">
-                    <nav>
-                        <ul class="nav">
-                            <li class="nav__items">how it works</li>
-                            <li class="nav__items">about us</li>
-                            <li class="nav__items">contact us</li>
-                            <li class="nav__items">blog</li>
-                        </ul>
-                    </nav>
-                </div>
+            <div class="header">
+                <img class="header__logo" height="32" src="img/logo.png" alt="logo">
+                <nav>
+                    <ul class="nav">
+                        <li class="nav__items"><a href="#">how it works</a></li>
+                        <li class="nav__items"><a href="#">about us</a></li>
+                        <li class="nav__items"><a href="#">contact us</a></li>
+                        <li class="nav__items"><a href="#">blog</a></li>
+                    </ul>
+                    <div class="nav_mobile">
+                        <div class="menu-btn">
+                            <span></span>
+                        </div>
+                    </div>
+                </nav>
             </div>
         </div>
-    </section>
+    </header>
+    <div class="mobile-menu">
+        <a class="mobile-menu_link" href="#">how it works</a>
+        <a class="mobile-menu_link" href="#">about us</a>
+        <a class="mobile-menu_link" href="#">contact us</a>
+        <a class="mobile-menu_link" href="#">blog</a>
+    </div>
     <section class="section-main">
         <div class="container">
-            <div class="row">
-                <div class="main">
-                    <div class="col-md-8 col-sm-12 left-col">
-                        <h1 class="main_h1">track your next <br> fuel shops</h1>
-                        <p class="main_p">Monitor and Alert on all petrol bunks near to you</p>
-                        <span>Sign up For <button class="main_btn">FREE</button></span>
-                        <form class="form">
-                            <input type="text" placeholder="Your E-mail Adress">
-                            <button class="btn" type="submit">Sign up</button>
-                        </form>
-                    </div>
-                    <div class="col-md-4 col-sm-offset-0 right-col">
-                        <img class="hand_phone" src="img/mobile.png" alt="mobile">
-                    </div>
-                    <ul data-relative-input="true" id="scene">
-                        <li data-depth="0.2" class="layer-1"><img src="img/1cloud.png" alt=""></li>
-                        <li data-depth="0.4" class="layer-2"><img src="img/2cloud.png" alt=""></li>
-                        <li data-depth="0.6" class="layer-3"><img src="img/3cloud.png" alt=""></li>
-                        <li data-depth="0.8" class="layer-4"><img src="img/4cloud.png" alt=""></li>
-                    </ul>
+            <div class="main">
+                <div class="left-col">
+                    <h1 class="main_h1">track your next <br> fuel shops</h1>
+                    <p class="main_p">Monitor and Alert on all petrol bunks near to you</p>
+                    <span>Sign up For <button class="main_btn">FREE</button></span>
+                    <form class="form form-header">
+                        <input type="text" placeholder="Your E-mail Adress">
+                        <button class="btn" type="submit">Sign up</button>
+                    </form>
                 </div>
+                <div class="right-col">
+                    <img class="hand_phone" src="img/mobile.png" alt="mobile">
+                </div>
+                <ul data-relative-input="true" id="scene">
+                    <li data-depth="0.2" class="layer-1"><img src="img/1cloud.png" alt=""></li>
+                    <li data-depth="0.4" class="layer-2"><img src="img/2cloud.png" alt=""></li>
+                    <li data-depth="0.6" class="layer-3"><img src="img/3cloud.png" alt=""></li>
+                    <li data-depth="0.8" class="layer-4"><img src="img/4cloud.png" alt=""></li>
+                </ul>
             </div>
         </div>
     </section>
-    <section class="section-partners">
+    <div class="section-partners">
         <div class="container">
-            <div class="row">
-                <div class="partners">
-                    <img class="partners__items" src="img/evernote.png" alt="partners">
-                    <img class="partners__items" src="img/microsoft.png" alt="partners">
-                    <img class="partners__items" src="img/google.png" alt="partners">
-                    <img class="partners__items" src="img/sony.png" alt="partners">
-                    <img class="partners__items" src="img/firefox.png" alt="partners">
+            <div class="partners">
+                <img class="partners__items" src="img/evernote.png" alt="partners">
+                <img class="partners__items" src="img/microsoft.png" alt="partners">
+                <img class="partners__items" src="img/google.png" alt="partners">
+                <img class="partners__items" src="img/sony.png" alt="partners">
+                <img class="partners__items" src="img/firefox.png" alt="partners">
+            </div>
+        </div>
+    </div>
+    <section class="section section-reasons">
+        <div class="container-fluid">
+            <h2 class="title">Why Tank App?</h2>
+            <div class="reasons">
+                <div class="reasons-text">
+                    <div class="reasons-item">
+                        <div class="reasons-item__title">
+                            <div class="reasons-item__title reasons-item__title_img">
+                                <img src="img/icon/cloud.png" width="49" alt="">
+                            </div>
+                            <h3>Reliable and Secure Platform</h3>
+                        </div>
+                        <div class="reasons-item__text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea com</p>
+                        </div>
+                    </div>
+                    <div class="reasons-item">
+                        <div class="reasons-item__title">
+                            <div class="reasons-item__title reasons-item__title_img">
+                                <img src="img/icon/timer.png" width="52" alt="">
+                            </div>
+                            <h3>Everything is perfectly orgainized</h3>
+                        </div>
+                        <div class="reasons-item__text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea com</p>
+                        </div>
+                    </div>
+                    <div class="reasons-item">
+                        <div class="reasons-item__title">
+                            <div class="reasons-item__title reasons-item__title_img">
+                                <img src="img/icon/support.png" width="53" alt="">
+                            </div>
+                            <h3>Rapid customer support</h3>
+                        </div>
+                        <div class="reasons-item__text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea com</p>
+                        </div>
+                    </div>
+                    <div class="reasons-item">
+                        <div class="reasons-item__title">
+                            <div class="reasons-item__title reasons-item__title_img">
+                                <img src="img/icon/easy-to-use.png" width="38" alt="">
+                            </div>
+                            <h3>Tons of features and easy to use</h3>
+                        </div>
+                        <div class="reasons-item__text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="reasons-img">
+                    <img src="img/comp.png" alt="">
                 </div>
             </div>
         </div>
     </section>
+    <section class="section section-work">
+        <div class="container">
+            <h2 class="title">WHY TANK APP DIFFRENT ?</h2>
+            <div class="work">
+                <div class="work-item">
+                    <div class="work__title">
+                        <img src="img/icon/cloud2.png" alt="">
+                        <p>Works on any device anyware</p>
+                    </div>
+                    <p class="work__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea com Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut</p>
+                </div>
+                <div class="work-item">
+                    <div class="work__title">
+                        <img src="img/icon/support.png" alt="">
+                        <p>Rapid customer support</p>
+                    </div>
+                    <p class="work__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea com Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut</p>
+                </div>
+                <div class="work-item">
+                    <div class="work__title">
+                        <img src="img/icon/timer.png" alt="">
+                        <p>Everything is perfectly orgainized</p>
+                    </div>
+                    <p class="work__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea com Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section-form">
+        <div class="container">
+            <h2 class="title">SAVE TIME & GAIN AGILITY</h2>
+            <p class="subtitle">Using our cloud Monitoring Services So you can Focous on Runing Yours Better </p>
+            <form class="form form-main">
+                <input type="text" placeholder="Enter Your E-mail Adress">
+                <button class="btn" type="submit">Sign up</button>
+            </form>
+        </div>
+    </section>
+    <footer class="section-footer">
+        <div class="container">
+            <div class="footer">
+                <img class="footer__logo" height="32" src="img/logo-footer.png" alt="logo">
+                <nav>
+                    <ul class="nav">
+                        <li class="nav__items"><a href="#">how it works</a></li>
+                        <li class="nav__items"><a href="#">about us</a></li>
+                        <li class="nav__items"><a href="#">contact us</a></li>
+                        <li class="nav__items"><a href="#">blog</a></li>
+                    </ul>
+                    <ul class="social">
+                        <li><a href="#"><img src="img/social/tw.png" alt=""></a></li>
+                        <li><a href="#"><img src="img/social/fb.png" alt=""></a></li>
+                        <li><a href="#"><img src="img/social/goo.png" alt=""></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
 	
 	<link rel="stylesheet" href="css/main.min.css">
 	<script src="js/scripts.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script src="libs/slick/slick.min.js"></script>
     <script>
         var scene = document.getElementById('scene');
         var parallaxInstance = new Parallax(scene);
+        $(document).ready(function(){
+            $('.work').slick({
+                dots: true,
+                arrows: false,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                adaptiveHeight: true
+            });
+        });
+        $('.menu-btn').on('click', function(e) {
+            e.preventDefault;
+            $(this).toggleClass('menu-btn_active');
+            $('.mobile-menu').toggleClass('mobile-menu_active');
+        });
     </script>
-
 </body>
 </html>
